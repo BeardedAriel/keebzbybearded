@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Keebs by Bearded</title>
+    <link rel="stylesheet" href="cart.css">
+    <meta charset="UTF-8">
+
+    <style>
+        footer {
+            text-align: center;
+            padding: 10px 0;
+        }
+        .cart-options {
+            margin: 20px 0;
+        }
+        .cart-options label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .payment-method {
+            margin: 20px 0;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Cart</h1>
+        <nav>
+            <ul>
+                <li><a href="/Shop.html">Back to Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cart-container">
+        <div id="cart-items"></div>
+        <div id="cart-total">
+            <p>Total: $<span id="total-price">0.00</span></p>
+        </div>
+
+        <!-- Cart Options -->
+        <div class="cart-options">
+            <label>
+                <input type="checkbox" id="order-parts-only">
+                Order as Parts Only (No Assembly)
+            </label>
+            <label>
+                <input type="checkbox" id="custom-build">
+                Custom Build - Stream My Keyboard Build
+            </label>
+            <label>
+                <input type="checkbox" id="private-build">
+                Build My Keyboard, But No Live Stream
+            </label>
+            <label>
+                <input type="checkbox" id="gift-option">
+                This is a Gift
+            </label>
+        </div>
+
+        <!-- Payment Method Dropdown -->
+        <div class="payment-method">
+            <label for="payment-method">Choose Payment Method:</label>
+            <select id="payment-method">
+                <option value="BIT\PAYBOX ">Bit\Paybox (Israel only) </option>
+                <option value="PayPal">PayPal</option>
+                <option value="Bank Transfer">Bank Transfer</option>
+                <option value="Downpayment 75% (Cash)">75% Downpayment (Cash)</option>
+            </select>
+        </div>
+
+ <!-- Checkout Buttons -->
+ <button id="checkout-whatsapp-button">Checkout - Send via WhatsApp</button>
+ <p class="stock-check-note">*All orders are subject to a stock check to confirm availability for purchase or assembly. Payment will only be processed after you review and approve the final quote.</p>
+</section>
+
+
+    <footer>
+        <p>&copy; 2025 Keebs by Bearded</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

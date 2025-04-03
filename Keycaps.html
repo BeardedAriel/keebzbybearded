@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keycaps - Keebs by Bearded</title>
+    <link rel="stylesheet" href="switchs.css">
+    <script src="Shop.js"></script>
+    <!-- Add Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Ensure the body and html take up the full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Main content area should grow to fill available space */
+        .shop-container {
+            flex: 1; /* This makes the content area take up the remaining space */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto; /* Pushes the footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Keycaps</h1>
+        <nav>
+            <ul>
+                <li><a href="Shop.html">Back to Shop</a></li>
+                <!-- Updated cart icon using Unicode -->
+                <li><a href="cart.html"><i style="font-size:24px" class="fa">&#xf07a;</i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="shop-container">
+        <div class="product-grid">
+            <!-- Keycaps List -->
+            <div class="product">
+                <img src="../images/keycap1.jpg" alt="GMK Holy Pandas Keycaps">
+                <h3>GMK Holy Pandas Keycaps</h3>
+                <p>$150.00</p>
+                <div class="preview-info">
+                    <p>GMK Holy Pandas feature a high-quality ABS plastic and are known for their satisfying feel and classic look, making them one of the most sought-after sets in the market.</p>
+                </div>
+                <button class="add-to-cart" data-id="keycap1" data-name="GMK Holy Pandas Keycaps" data-price="150.00" data-image="../images/keycap1.jpg">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="../images/keycap2.jpg" alt="Keychron K4 Keycaps">
+                <h3>Keychron K4 Keycaps</h3>
+                <p>$80.00</p>
+                <div class="preview-info">
+                    <p>These keycaps are designed for a clean and sleek aesthetic. Compatible with a variety of switches, they are durable and offer excellent key feel.</p>
+                </div>
+                <button class="add-to-cart" data-id="keycap2" data-name="Keychron K4 Keycaps" data-price="80.00" data-image="../images/keycap2.jpg">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="../images/keycap3.jpg" alt="Ducky One 2 RGB Keycaps">
+                <h3>Ducky One 2 RGB Keycaps</h3>
+                <p>$110.00</p>
+                <div class="preview-info">
+                    <p>Ducky One 2 RGB keycaps come with a vibrant backlight compatibility, offering a unique glow that adds style to any setup. They are ideal for gamers and enthusiasts alike.</p>
+                </div>
+                <button class="add-to-cart" data-id="keycap3" data-name="Ducky One 2 RGB Keycaps" data-price="110.00" data-image="../images/keycap3.jpg">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="../images/keycap4.jpg" alt="Varmilo VA87M Keycaps">
+                <h3>Varmilo VA87M Keycaps</h3>
+                <p>$120.00</p>
+                <div class="preview-info">
+                    <p>The Varmilo VA87M keycaps are crafted with PBT plastic for long-lasting durability. The ergonomic profile provides both comfort and a premium feel for long typing sessions.</p>
+                </div>
+                <button class="add-to-cart" data-id="keycap4" data-name="Varmilo VA87M Keycaps" data-price="120.00" data-image="../images/keycap4.jpg">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="../images/keycap5.jpg" alt="Cherry MX Keycaps">
+                <h3>Cherry MX Keycaps</h3>
+                <p>$100.00</p>
+                <div class="preview-info">
+                    <p>Cherry MX keycaps are legendary for their smooth feel and high-quality construction. Available in multiple color options and profiles, these keycaps provide a reliable typing experience.</p>
+                </div>
+                <button class="add-to-cart" data-id="keycap5" data-name="Cherry MX Keycaps" data-price="100.00" data-image="../images/keycap5.jpg">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="../images/keycap6.jpg" alt="Razer PBT Keycaps">
+                <h3>Razer PBT Keycaps</h3>
+                <p>$85.00</p>
+                <div class="preview-info">
+                    <p>Razer's PBT keycaps offer exceptional durability and a textured feel. They are designed to withstand heavy use while maintaining an aesthetically pleasing look.</p>
+                </div>
+                <button class="add-to-cart" data-id="keycap6" data-name="Razer PBT Keycaps" data-price="85.00" data-image="../images/keycap6.jpg">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="../images/keycap7.jpg" alt="Tai-Hao Keycaps">
+                <h3>Tai-Hao Keycaps</h3>
+                <p>$70.00</p>
+                <div class="preview-info">
+                    <p>Tai-Hao keycaps offer a range of bright, bold colors that are perfect for those who want to customize their keyboard setup. These keycaps are made from high-quality ABS plastic for long-lasting use.</p>
+                </div>
+                <button class="add-to-cart" data-id="keycap7" data-name="Tai-Hao Keycaps" data-price="70.00" data-image="../images/keycap7.jpg">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="../images/keycap8.jpg" alt="GMK Red Samurai Keycaps">
+                <h3>GMK Red Samurai Keycaps</h3>
+                <p>$160.00</p>
+                <div class="preview-info">
+                    <p>GMK Red Samurai keycaps are a premium set made from thick ABS plastic. Featuring a stunning red and black design with samurai art, these keycaps provide both beauty and durability.</p>
+                </div>
+                <button class="add-to-cart" data-id="keycap8" data-name="GMK Red Samurai Keycaps" data-price="160.00" data-image="../images/keycap8.jpg">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="../images/keycap9.jpg" alt="Razer Green Keycaps">
+                <h3>Razer Green Keycaps</h3>
+                <p>$95.00</p>
+                <div class="preview-info">
+                    <p>Razer Green keycaps are designed for gamers who love tactile feedback. They offer an audible click with every press, enhancing your gaming and typing experience.</p>
+                </div>
+                <button class="add-to-cart" data-id="keycap9" data-name="Razer Green Keycaps" data-price="95.00" data-image="../images/keycap9.jpg">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="../images/keycap10.jpg" alt="Akko World Tour Keycaps">
+                <h3>Akko World Tour Keycaps</h3>
+                <p>$130.00</p>
+                <div class="preview-info">
+                    <p>The Akko World Tour keycaps are themed after different global cities, each keyset bringing unique color schemes and artistic design. Made from high-quality PBT plastic, they offer a satisfying feel.</p>
+                </div>
+                <button class="add-to-cart" data-id="keycap10" data-name="Akko World Tour Keycaps" data-price="130.00" data-image="../images/keycap10.jpg">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Keebs by Bearded</p>
+    </footer>
+
+</body>
+</html>

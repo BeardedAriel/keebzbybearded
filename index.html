@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Keebs by Bearded</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* Restrict horizontal scrolling */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden; /* Disable horizontal scrolling */
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            // Preloader Fade Out
+            document.getElementById("preloader").style.opacity = "0";
+            setTimeout(function() {
+                document.getElementById("preloader").style.display = "none";
+                document.body.classList.add('fade-in');
+            }, 1500); // Delay to allow for a smooth fade
+
+            // Show banners after preloader fades
+            setTimeout(function() {
+                document.querySelector('.banner-container-left').style.opacity = '1';
+                document.querySelector('.banner-container-right').style.opacity = '1';
+                document.querySelector('.banner-container-middle').style.opacity = '1'; // Add middle banner fade-in
+            }, 1500); // Delay the banner fade-in after preloader
+        };
+    </script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+        <h1>Welcome to Keebs by Bearded</h1>
+    </div>
+
+    <header>
+        <h1>Welcome to Keebs by Bearded</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <!-- Updated Cart Icon -->
+                <li><a href="cart.html" class="cart-logo"><i class="fa fa-shopping-cart" style="font-size: 24px;"></i></a></li>
+            </ul>
+        </nav>  
+    </header>
+
+    <main>
+        <!-- Left Banner -->
+        <div class="banner-container-left">
+            <div class="banner-text">Welcome to Keebs by Bearded – Custom Keyboards for Everyone!</div>
+        </div>  
+
+        <!-- Right Banner -->
+        <div class="banner-container-right">
+            <div class="banner-text-right">Explore our premium mechanical keyboards and accessories!</div>
+        </div>
+
+        <!-- Middle Banner (Lower Banner) -->
+        <div class="banner-container-middle">
+            <div class="banner-text-Lower">LALALALA</div>
+        </div>
+        
+        <section class="info-section">
+            <h2>Discover Our Craft</h2>
+            <p>At Keebs by Bearded, we specialize in custom mechanical keyboards tailored to your needs. Explore our wide range of keycaps, switches, and artisans for the perfect typing experience.</p>
+        </section>
+
+        <section class="image-grid">
+            <div class="image-item">
+                <a href="product1.html">
+                    <img src="images/keyboard1.jpg" alt="Premium TKL Keyboard">
+                </a>
+            </div>
+            <div class="image-item">
+                <a href="product2.html">
+                    <img src="images/keyboard2.jpg" alt="65% Mechanical Keyboard">
+                </a>
+            </div>
+            <div class="image-item">
+                <a href="product3.html">
+                    <img src="images/keyboard3.jpg" alt="75% Wireless Keyboard">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Keebs by Bearded</p>
+    </footer>
+
+    <script defer src="main.js"></script>
+</body>
+</html>

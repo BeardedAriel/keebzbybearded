@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Keebs by Bearded</title>
+    <link rel="stylesheet" href="Shop.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Shop Keyboards & Accessories</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <!-- Updated Cart Icon -->
+                <li><a href="cart.html" class="cart-logo"><i class="fa fa-shopping-cart" style="font-size: 24px;"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Shop Categories -->
+    <section class="shop-categories">
+        <h2>Browse by Category</h2>
+        <div class="category-grid">
+            <a href="Switchs.html" class="category-card">Switches</a>
+            <a href="keycaps.html" class="category-card">Keycaps</a>
+            <a href="extras.html" class="category-card">Extras</a>
+        </div>
+    </section>
+
+    <!-- Shop Products -->
+    <section class="shop-container">
+        <h2>Custom Keyboards</h2>
+        <div class="product-grid">
+            <div class="product">
+                <a href="../product1.html">
+                    <img src="../images/keyboard1.jpg" alt="Premium TKL Keyboard Image">
+                    <h3>Premium TKL Keyboard</h3>
+                </a>
+                <p>$250.00</p>
+                <button class="add-to-cart" 
+                        data-id="1" 
+                        data-name="Premium TKL Keyboard" 
+                        data-price="250.00" 
+                        data-image="../images/keyboard1.jpg">Add to Cart</button>
+            </div>
+            <div class="product">
+                <a href="../product2.html">
+                    <img src="../images/keyboard2.jpg" alt="65% Mechanical Keyboard Image">
+                    <h3>65% Mechanical Keyboard</h3>
+                </a>
+                <p>$220.00</p>
+                <button class="add-to-cart" 
+                        data-id="2" 
+                        data-name="65% Mechanical Keyboard" 
+                        data-price="220.00" 
+                        data-image="../images/keyboard2.jpg">Add to Cart</button>
+            </div>
+            <div class="product">
+                <a href="../product3.html">
+                    <img src="../images/keyboard3.jpg" alt="75% Wireless Keyboard Image">
+                    <h3>75% Wireless Keyboard</h3>
+                </a>
+                <p>$280.00</p>
+                <button class="add-to-cart" 
+                        data-id="3" 
+                        data-name="75% Wireless Keyboard" 
+                        data-price="280.00" 
+                        data-image="../images/keyboard3.jpg">Add to Cart</button>
+            </div>
+            <div class="product">
+                <a href="../product4.html">
+                    <img src="../images/keyboard4.jpg" alt="60% Gaming Keyboard Image">
+                    <h3>60% Gaming Keyboard</h3>
+                </a>
+                <p>$200.00</p>
+                <button class="add-to-cart" 
+                        data-id="4" 
+                        data-name="60% Gaming Keyboard" 
+                        data-price="200.00" 
+                        data-image="../images/keyboard4.jpg">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Keebs by Bearded</p>
+    </footer>
+    <script src="Shop.js"></script>
+</body>
+</html>

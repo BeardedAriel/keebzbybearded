@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Keebs by Bearded</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+        // Function to check the password and show the admin page
+        function checkPassword() {
+            var password = prompt("Please enter the admin password:");
+            if (password === "Keyboard123") {
+                // If password is correct, show the admin content
+                document.getElementById('admin-content').style.display = "block";
+            } else {
+                // If password is incorrect, redirect to homepage
+                alert("Incorrect password!");
+                window.location.href = "index.html"; // Redirect to home page
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Admin Content (Initially hidden until correct password) -->
+    <section id="admin-content" style="display: none;">
+        <div class="admin-container">
+            <h2>Manage Products</h2>
+
+            <!-- Product 1 Management -->
+            <section class="product-edit">
+                <h3>Product 1</h3>
+                <form class="product-form">
+                    <div class="form-group">
+                        <label for="product1-price">Price</label>
+                        <input id="product1-price" class="input-field" type="text" value="$250.00" />
+                    </div>
+                    <button type="submit" class="btn-update">Update Price</button>
+                </form>
+            </section>
+
+            <!-- Product 2 Management -->
+            <section class="product-edit">
+                <h3>Product 2</h3>
+                <form class="product-form">
+                    <div class="form-group">
+                        <label for="product2-price">Price</label>
+                        <input id="product2-price" class="input-field" type="text" value="$220.00" />
+                    </div>
+                    <button type="submit" class="btn-update">Update Price</button>
+                </form>
+            </section>
+        </div>
+    </section>
+</body>
+</html>

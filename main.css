@@ -1,0 +1,213 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 3s ease-out;
+    flex-direction: column;
+    text-align: center;
+}
+
+#preloader p {
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fade-in effect for body */
+body.fade-in {
+    opacity: 1;
+    transition: opacity 3s ease;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* General Banner Styles */
+.banner-container-left,
+.banner-container-right,
+.banner-container-middle {
+    width: 100vw;
+    overflow: hidden;
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1000;
+    opacity: 0; /* Start with the banners invisible */
+    transition: opacity 1.5s ease-in-out; /* Smooth fade-in transition */
+}
+
+/* Left Banner */
+.banner-container-left {
+    background-color: #faa70d;
+}
+
+/* Right Banner */
+.banner-container-right {
+    background-color: #935003;
+    right: 0;
+    left: auto;
+}
+
+/* Middle Banner */
+.banner-container-middle {
+    background-color: #1abc9c;
+    left: 0;
+    right: auto;
+}
+
+/* Banner Text Styles */
+.banner-text,
+.banner-text-right,
+.banner-text-Lower {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Left Banner Text */
+.banner-text {
+    padding-left: 100vw;
+    animation: marquee-left 20s linear infinite;
+}
+
+/* Right Banner Text */
+.banner-text-right {
+    padding-right: 100vw;
+    animation: marquee-right 20s linear infinite;
+}
+
+/* Middle Banner Text */
+.banner-text-Lower {
+    padding-left: 100vw;
+    animation: marquee-middle 20s linear infinite;
+}
+
+/* Marquee Animations */
+@keyframes marquee-left {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-right {
+    from {
+        transform: translateX(-100vw);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* New Marquee Animation for Middle Banner */
+@keyframes marquee-middle {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Info Section */
+.info-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.info-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px 10%;
+}
+
+.image-item {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-item a img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-item a:hover img {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+}
